@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="proyecto-ear">
+        <wb-resource deploy-path="/" source-path="/" tag="defaultRootSource"/>
+        <dependent-module archiveName="register-otp-war-1.0-SNAPSHOT.war" deploy-path="/" handle="module:/resource/register-otp-war/register-otp-war">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="logback-classic-1.2.3.jar" deploy-path="/lib/" handle="module:/classpath/var/M2_REPO/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="logback-core-1.2.3.jar" deploy-path="/lib/" handle="module:/classpath/var/M2_REPO/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="slf4j-api-1.7.25.jar" deploy-path="/lib/" handle="module:/classpath/var/M2_REPO/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jsoup-1.13.1.jar" deploy-path="/lib/" handle="module:/classpath/var/M2_REPO/org/jsoup/jsoup/1.13.1/jsoup-1.13.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-configuration-1.10.jar" deploy-path="/lib/" handle="module:/classpath/var/M2_REPO/commons-configuration/commons-configuration/1.10/commons-configuration-1.10.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-lang-2.6.jar" deploy-path="/lib/" handle="module:/classpath/var/M2_REPO/commons-lang/commons-lang/2.6/commons-lang-2.6.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-logging-1.1.1.jar" deploy-path="/lib/" handle="module:/classpath/var/M2_REPO/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="resilience4j-feign-1.7.1.jar" deploy-path="/lib/" handle="module:/classpath/var/M2_REPO/io/github/resilience4j/resilience4j-feign/1.7.1/resilience4j-feign-1.7.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="vavr-0.10.2.jar" deploy-path="/lib/" handle="module:/classpath/var/M2_REPO/io/vavr/vavr/0.10.2/vavr-0.10.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="vavr-match-0.10.2.jar" deploy-path="/lib/" handle="module:/classpath/var/M2_REPO/io/vavr/vavr-match/0.10.2/vavr-match-0.10.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="resilience4j-retry-1.7.1.jar" deploy-path="/lib/" handle="module:/classpath/var/M2_REPO/io/github/resilience4j/resilience4j-retry/1.7.1/resilience4j-retry-1.7.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="resilience4j-ratelimiter-1.7.1.jar" deploy-path="/lib/" handle="module:/classpath/var/M2_REPO/io/github/resilience4j/resilience4j-ratelimiter/1.7.1/resilience4j-ratelimiter-1.7.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="resilience4j-bulkhead-1.7.1.jar" deploy-path="/lib/" handle="module:/classpath/var/M2_REPO/io/github/resilience4j/resilience4j-bulkhead/1.7.1/resilience4j-bulkhead-1.7.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="resilience4j-core-1.7.1.jar" deploy-path="/lib/" handle="module:/classpath/var/M2_REPO/io/github/resilience4j/resilience4j-core/1.7.1/resilience4j-core-1.7.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="resilience4j-timelimiter-1.7.1.jar" deploy-path="/lib/" handle="module:/classpath/var/M2_REPO/io/github/resilience4j/resilience4j-timelimiter/1.7.1/resilience4j-timelimiter-1.7.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="resilience4j-circuitbreaker-1.7.1.jar" deploy-path="/lib/" handle="module:/classpath/var/M2_REPO/io/github/resilience4j/resilience4j-circuitbreaker/1.7.1/resilience4j-circuitbreaker-1.7.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="feign-jaxrs-11.7.jar" deploy-path="/lib/" handle="module:/classpath/var/M2_REPO/io/github/openfeign/feign-jaxrs/11.7/feign-jaxrs-11.7.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jsr311-api-1.1.1.jar" deploy-path="/lib/" handle="module:/classpath/var/M2_REPO/javax/ws/rs/jsr311-api/1.1.1/jsr311-api-1.1.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="feign-core-11.7.jar" deploy-path="/lib/" handle="module:/classpath/var/M2_REPO/io/github/openfeign/feign-core/11.7/feign-core-11.7.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="feign-jackson-11.7.jar" deploy-path="/lib/" handle="module:/classpath/var/M2_REPO/io/github/openfeign/feign-jackson/11.7/feign-jackson-11.7.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jackson-databind-2.13.0.jar" deploy-path="/lib/" handle="module:/classpath/var/M2_REPO/com/fasterxml/jackson/core/jackson-databind/2.13.0/jackson-databind-2.13.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jackson-annotations-2.13.0.jar" deploy-path="/lib/" handle="module:/classpath/var/M2_REPO/com/fasterxml/jackson/core/jackson-annotations/2.13.0/jackson-annotations-2.13.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jackson-core-2.13.0.jar" deploy-path="/lib/" handle="module:/classpath/var/M2_REPO/com/fasterxml/jackson/core/jackson-core/2.13.0/jackson-core-2.13.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="feign-form-3.8.0.jar" deploy-path="/lib/" handle="module:/classpath/var/M2_REPO/io/github/openfeign/form/feign-form/3.8.0/feign-form-3.8.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+    </wb-module>
+</project-modules>

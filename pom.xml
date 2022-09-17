@@ -1,0 +1,139 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<artifactId>register-otp-assembly</artifactId>
+	<groupId>com.leonisa.registerotp</groupId>
+	<version>1.0-SNAPSHOT</version>
+	<packaging>pom</packaging>
+
+	<modules>
+		<module>register-otp-ear</module>
+		<module>register-otp-war</module>
+	</modules>
+
+	<properties>
+		<!-- encoding configuration and java compiler version -->
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven.compiler.target>1.8</maven.compiler.target>
+		<maven.compiler.source>1.8</maven.compiler.source>
+
+		<!-- set variable environment and version utils JAR -->
+		<environment>dev</environment>
+
+		<!-- 3rd vendor library version -->
+		<lombok.version>1.18.2</lombok.version>
+		<logback.version>1.2.3</logback.version>
+		<jsoup.version>1.13.1</jsoup.version>
+		<commons.configuration.version>1.10</commons.configuration.version>
+		<feign-jaxrs.version>11.7</feign-jaxrs.version>
+		<feign-form.version>3.8.0</feign-form.version>
+		<resilience4j.version>1.7.1</resilience4j.version>
+	</properties>
+
+	<dependencyManagement>
+		<dependencies>
+
+			<dependency>
+				<groupId>com.leonisa</groupId>
+				<artifactId>register-otp-ear</artifactId>
+				<version>${project.version}</version>
+				<type>ear</type>
+				<scope>compile</scope>
+			</dependency>
+
+			<dependency>
+				<groupId>com.leonisa</groupId>
+				<artifactId>register-otp-war</artifactId>
+				<version>${project.version}</version>
+				<type>war</type>
+				<scope>compile</scope>
+			</dependency>
+
+			<!-- https://mvnrepository.com/artifact/javax/javaee-api -->
+			<dependency>
+				<groupId>javax</groupId>
+				<artifactId>javaee-api</artifactId>
+				<version>7.0</version>
+				<scope>provided</scope>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/log4j/log4j -->
+			<dependency>
+				<groupId>ch.qos.logback</groupId>
+				<artifactId>logback-classic</artifactId>
+				<version>${logback.version}</version>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/org.jsoup/jsoup -->
+			<dependency>
+				<groupId>org.jsoup</groupId>
+				<artifactId>jsoup</artifactId>
+				<version>${jsoup.version}</version>
+			</dependency>
+			<!-- lombok dependencies -->
+			<dependency>
+				<groupId>org.projectlombok</groupId>
+				<artifactId>lombok</artifactId>
+				<version>${lombok.version}</version>
+				<scope>provided</scope>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/org.apache.commons/commons-configuration2 -->
+			<dependency>
+				<groupId>commons-configuration</groupId>
+				<artifactId>commons-configuration</artifactId>
+				<version>${commons.configuration.version}</version>
+			</dependency>
+
+			<!-- RESILIENCE4J https://mvnrepository.com/artifact/io.github.resilience4j/resilience4j-feign -->
+			<dependency>
+				<groupId>io.github.resilience4j</groupId>
+				<artifactId>resilience4j-feign</artifactId>
+				<version>${resilience4j.version}</version>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/io.github.resilience4j/resilience4j-bulkhead -->
+			<dependency>
+				<groupId>io.github.resilience4j</groupId>
+				<artifactId>resilience4j-bulkhead</artifactId>
+				<version>${resilience4j.version}</version>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/io.github.resilience4j/resilience4j-timelimiter -->
+			<dependency>
+				<groupId>io.github.resilience4j</groupId>
+				<artifactId>resilience4j-timelimiter</artifactId>
+				<version>${resilience4j.version}</version>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/io.github.resilience4j/resilience4j-circuitbreaker -->
+			<dependency>
+				<groupId>io.github.resilience4j</groupId>
+				<artifactId>resilience4j-circuitbreaker</artifactId>
+				<version>${resilience4j.version}</version>
+			</dependency>
+
+			<!-- FEING https://mvnrepository.com/artifact/io.github.openfeign/feign-jaxrs -->
+			<dependency>
+				<groupId>io.github.openfeign</groupId>
+				<artifactId>feign-jaxrs</artifactId>
+				<version>${feign-jaxrs.version}</version>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/io.github.openfeign/feign-core -->
+			<dependency>
+				<groupId>io.github.openfeign</groupId>
+				<artifactId>feign-core</artifactId>
+				<version>${feign-jaxrs.version}</version>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/io.github.openfeign/feign-jackson -->
+			<dependency>
+				<groupId>io.github.openfeign</groupId>
+				<artifactId>feign-jackson</artifactId>
+				<version>${feign-jaxrs.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>io.github.openfeign.form</groupId>
+				<artifactId>feign-form</artifactId>
+				<version>${feign-form.version}</version>
+			</dependency>
+
+		</dependencies>
+	</dependencyManagement>
+
+</project>
